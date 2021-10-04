@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #29416D;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px; /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px; /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2>MARS</h2>
+<p>Mars is the fourth planet from the Sun and is the second smallest planet in the solar system. Named after the Roman god of war, Mars is also often described as the “Red Planet” due to its reddish appearance. Mars is a terrestrial planet with a thin atmosphere composed primarily of carbon dioxide.</p>
+<header>
+    <h2>Space facts</h2>
+</header>
+
+<section>
+    <article>
+        <table>
+            <tr>
+                <td>Equatorial Diameter:</td>
+                <td>6,792 km</td>
+            </tr>
+            <tr>
+                <td>Polar Diameter:</td>
+                <td>6,752 km</td>
+            </tr>
+            <tr>
+                <td>Mass:</td>
+                <td>6.39 × 10^23 kg
+                    (0.11 Earths)</td>
+            </tr>
+        </table>
+
+        <img src="images/mars-v2.jpg" width="100%" alt="">
+        <h2>Facts about Mars</h2>
+        <ul>
+            <li>
+                Mars and Earth have approximately the same landmass
+                <p>
+                Even though Mars has only 15% of the Earth’s volume and just over 10% of the Earth’s mass, around two thirds of the Earth’s surface is covered in water. Martian surface gravity is only 37% of the Earth’s (meaning you could leap nearly three times higher on Mars).
+            </li>
+            <li>
+                Mars is home to the tallest mountain in the solar system.
+                <p>
+                Olympus Mons, a shield volcano, is 21km high and 600km in diameter. Despite having formed over billions of years, evidence from volcanic lava flows is so recent many scientists believe it could still be active.
+            </li>
+        </ul>
+
+        <h2>Mars Diagrams</h2>
+        <p>
+
+        </p>
+        <a href="images/mars-v2.jpg" download>Click here to download MARS image</a>
+        <p></p>
+        <iframe src="https://www.youtube.com/embed/DrDm7uO4Fu0?rel=0"
+                height="200" width="300" title="Iframe Example"></iframe>
+
+
+    </article>
+</section>
+
+<!--<footer>-->
+<!--    <p>Footer</p>-->
+<!--</footer>-->
+
+</body>
+</html>
+
